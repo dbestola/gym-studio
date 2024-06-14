@@ -2,6 +2,7 @@
 var navtoggle = document.getElementById(`navtoggle`)
 var navClose = document.getElementById(`navClose`)
 var navbar = document.getElementById ('navShow')
+var navMobile = document.getElementById('nav-mobileShow')
 
 var mon = document.getElementById('mon')
 var tue = document.getElementById('tue')
@@ -213,12 +214,7 @@ if (mon.className = 'active') {
     if (window.innerWidth <= 700) {
         navtoggle.style.visibility =`hidden`
         navClose.style.visibility =`visible`
-        navbar.style.display = 'block'
-        navbar.style.background = 'black'
-        navbar.style.width = '700px'
-        navbar.style.marginTop = '0'
-        navbar.style.textAlign = 'center'
-        
+        navMobile.style.visibility = 'visible'
         
     }
   }
@@ -227,7 +223,7 @@ if (mon.className = 'active') {
     if (window.innerWidth <= 700) {
     navClose.style.visibility =`hidden`
     navtoggle.style.visibility =`visible`
-        navbar.style.display = 'none'    
+    navMobile.style.visibility = 'hidden'   
     }
   }
 
@@ -242,14 +238,16 @@ if (mon.className = 'active') {
       // Ensure both icons are hidden when the screen is above 700px
       navtoggle.style.visibility =`hidden`;
       navClose.style.visibility =`hidden`;
-      // navbar.style.visibility = 'hidden';
+      navMobile.style.visibility = 'hidden'
        
      
-    } else {
-      // Reset to default visibility for icons in small screens
-      navtoggle.style.visibility =`visible`;
-      navClose.style.visibility =`hidden`;
-      // navbar.style.visibility = 'visible'
+    } 
+    
+
+    else {
+       navtoggle.style.visibility =`visible`;
+       navClose.style.visibility =`hidden`;
+       navMobile.style.visibility = 'hidden';
     }
 
   }

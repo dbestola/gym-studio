@@ -20,7 +20,7 @@ html, body {
 
 header, nav, section, article, aside, footer, hgroup {
     display: block;
-}
+} 
 
 .hide {
     visibility: hidden;  
@@ -194,9 +194,9 @@ ul, li {
     object-fit: cover;
     z-index: -1;
 }
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 .video-overlay {
     position: absolute;
@@ -707,6 +707,53 @@ footer p {
 .hide {
     display: none;
 }
+
+.mobile-nav {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-mobile {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    visibility: hidden;
+
+}
+
+.nav-mobile li {
+    border: 1px solid rgba(0, 0, 0, 0.034) ;
+    height: 50px;
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav .nav-mobile .main-button a {
+    width: 600px;
+    display: inline-block;
+    font-size: 15px;
+    background-color: rgb(237, 86, 59);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+/* .header-area .mobile-nav .nav-mobile li:hover a, 
+.header-area .mobile-nav .main-nav .nav-mobile li a.active {
+    color: #ed563b;
+    opacity: 1;
+} */
 
 
 /* Media Responsiveness */
